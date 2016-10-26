@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Crystals Collector</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<div class="container">
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="h1"> Crystals Collector </h1>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-body"  id="howToPlay">
+						
+			<small id="info"> 
+			<p class="lead"> You will be given a random number at the start of the game.</p> <br>
+
+			<p>
+			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+							
+			<p>
+			You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</p><br>
+							
+			<p>
+			The value of each crystal is hidden from you until you click on it.<p><br>
+							
+			<p>
+			Each time the game starts, the gam will change the value of each crystal.</p>
+						
+			</small>
+			</h1>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-md-3">
+			<div class="container">
+				<h2><strong> Number to Reach </strong>
+				</h2>
+			</div>
+			</div>
+
+					<div class="panel-body">
+						<p> <span id="randomNumber"></span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="panel">
+					<div class="panel-heading" class="topHeading">
+						<h2 class="panel-title"> <strong>Your Total Score is: </strong></h2>
+					</div>
+					<div class="panel-body">
+						<p> <span id="userTotalScore"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="row">
+						<div class="col-md-6" id="winLoseAlert">
+							<div class="panel-body"> 
+								<p><strong>Wins: <br></strong></p>
+								<p id="wins">  0  </p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="panel-body">
+								<p><strong>Losses: <br></strong></p>
+								<p id="losses"> 0  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+
+		<div class="row">
+			<div class="panel-body" id="crystals">
+
+				<div class="col-md-2" id="redCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-2" id="blueCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-2" id="greenCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-2" id="yellowCrystal" class="crystals" class="center-block">
+				</div>
+			</div>
+		</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
